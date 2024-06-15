@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-image: url(im5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    position: relative;
+    width: 77%;
+}
+
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #003147;
+    overflow: hidden;
+}
+
+.navigation.active {
+    width: 60px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover {
+    background: #03a9f4;
+}
+
+.navigation ul li:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.navigation ul li:nth-child(1):hover {
+    background: transparent;
+} 
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: thistle;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+    color: thistle;
+    font-size: 24px;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.main {
+    position: relative;
+    left: 300px;
+    min-height: 100vh;
+    background: thistle;
+    /* transition: 0.5s; */
+    background-image: url(im2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main.active {
+    left: 60px;
+}
+
+.main .topbar {
+    width: auto;
+    background: white;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 80%;
+    height: 25px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.search label .fa {
+    position: absolute;
+    left: 15px;
+    top: 4px;
+}
+
+.user {
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBox
+{
+    position: relative;
+    width: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.CardBox .card .numbers {
+    position: relative;
+    font-size: 2px;
+    font-weight: bold;
+}
+
+.CardBox .card .cardName {
+    color: black;
+    font-weight: bold;
+}
+
+.CardBox .card .iconBox {
+    font-size: 2.5em;
+    color: rgb(13, 141, 180);
+}
+
+.details {
+    position: relative;
+    width: auto;
+    padding: 20px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    opacity: 0.8;
+}
+
+.details .recentOrders {
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #08357d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recentOrders table tr {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.details .recentOrders table tbody tr:last-child {
+    border-radius: none;
+}
+
+.details .recentOrders  tbody tr:hover {
+    background: #03a9f4;
+    color: #fff;
+}
+
+.details .recentOrders table tr td {
+    padding: 9px 5px;
+}
+
+.details .recentOrders table thead tr td:last-child,
+.details .recentOrders table tbody tr td:last-child {
+    text-align: right;
+}
+
+.details .recentOrders table thead tr td:nth-child(2),
+.details .recentOrders table tbody tr td:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.details .recentOrders table thead tr td:nth-child(3),
+.details .recentOrders table tbody tr td:nth-child(3) {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.status {
+    position: relative;
+    padding: 2px 4px;
+    background: chocolate;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.details .recentCustomers {
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+.details .recentCustomers .imgBox {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details .recentCustomers .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details .recentCustomers table tr td h4 span {
+    font-size: 14px;
+    color: #999;
+}
+
+.details .recentCustomers table tr:hover,
+.details .recentCustomers table tr:hover td h4 span {
+    background: #03a9f4;
+    color: #fff;
+}
+
+.details .recentCustomers table tr td {
+    padding: 7px 10px;
+}
+
+.details .recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+/*make it responsive*/
+
+/* @media (max-width: 992px)
+{
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active {
+        left: 0;
+    }
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .main.active {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .cardBox {
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+ */
+/* @media (max-width: 768px)
+{
+    .details {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+} */
+
+/* @media (max-width: 480px)
+{
+    .cardBox {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .details .recentOrders table {
+        width: 600px;
+    }
+    .navigation {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+    .toggle {
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;
+    }
+    .toggle.active::before {
+        color: #fff;
+    }
+    .main,
+    .main.active {
+        width: 100%;
+        left: 0;
+    }
+} */
+
+.edt {
+    position: relative;
+    width: 95%;
+    padding: 20px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr;
+}
+
+.taleau{
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    height: max-content;
+    background: #fff;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.grid-container
+{
+    display : grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr;
+    color : black;
+}
+
+.grid-container>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+
+}
+
+.grid-containerC
+{
+    display: grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-containerC>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.grid-containerT
+{
+    display : grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns : 5% 10% 20% 10% 10% 10% 15% 10% 10%;
+    color : black;
+}
+
+.grid-containerT>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+
+}
+
+.grid-containerCT
+{
+    display: grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns: 5% 10% 20% 10% 10% 10% 15% 10% 10%;
+}
+
+.grid-containerCT>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.grid-containerTA
+{
+    display : grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns : 5% 8% 20% 8% 8% 10% 15% 8% 8% 8%;
+    color : black;
+}
+
+.grid-containerTA>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+
+}
+
+.grid-containerCTA
+{
+    display: grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns: 5% 8% 20% 8% 8% 10% 15% 8% 8% 8%;
+}
+
+.grid-containerCTA>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+.grid-containerPo
+{
+    display : grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns : 2% 13% 20% 9% 9% 9% 9% 9%;
+    color : black;
+}
+
+.grid-containerPo>*
+{
+    /* border : 1px solid white; */
+    display: grid;
+    place-items: center;
+    border : 1px solid black;
+
+}
+
+.grid-containerAo
+{
+    display: grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns: 5% 10% 20% 10% 9% 9% 9% 9% 9%;
+}
+
+.grid-containerAo>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+}
+
+#displayAllTasks
+{
+    display: none;
+}
+
+#displayTodayTasks
+{
+    display: none;
+}
+
+#displayAllEmployees
+{
+    display: none;
+}
+
+#displayArrivals
+{
+    display : block;
+}
+
+.animate
+{
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s;
+}
+
+@-webkit-keyframes animatezoom
+{
+    from{-webkit-transform: scale(0)} to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom
+{
+    from{transform: scale(0)} to {transform: scale(1)}
+}
+
+.grid-container-Arrivals
+{
+    display : grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    color : black;
+}
+
+.grid-container-Arrivals>*
+{
+    border : 1px solid black;
+    display: grid;
+    place-items: center;
+}

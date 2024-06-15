@@ -1,0 +1,215 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.separator {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: goldenrod;
+    text-align: center;
+}
+.navbar-brand{
+    padding: 0px 0px 0px 19px;
+}
+.container-fluid {
+    padding: 0px;
+}
+
+/* header */
+
+/* bannière */
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
+.ban {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.ban img {
+    width: 100%;
+    max-width: 100%;
+}
+.linear-banner { 
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+main h1 {
+    color: black;
+    text-shadow: 1px 1px 20px black;
+    width: 100%;
+    text-align: center;
+}
+.linear-banner .btn-custom {
+    background-color: navy;
+    color: cornsilk;
+}
+.linear-banner .btn-custom:hover {
+    background-color:grey;
+}
+.linear-banner .btn-custom1 {
+    background-color: goldenrod;
+    color: cornsilk;
+}
+.linear-banner .btn-custom1:hover {
+    background-color:grey;
+}
+
+/*about */
+.about {
+   text-align: center;
+   padding-top: 10%;
+}
+.about article {
+    margin-top: 10%;
+
+}
+.about article h2 {
+    text-align: center;
+}
+
+/* SDE */
+.sde {
+    text-align: center;
+    background-color: gray;
+}
+.val {
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+}
+/* carousel*/
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 3em;
+}
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+.im{
+    display: flex;
+    transition: 1s linear;
+}
+.image{
+    flex: 1 0 100%; /*etendue de l'image*/
+    position: relative;
+}
+.image > img{
+    width: 100%;
+}
+.caption{
+    position: absolute;
+    /*par rapport au titre de l'image*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 30px;
+}
+
+.curseur:hover {cursor: pointer ;}
+   
+/* nos valeurs */
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+}
+.card-title {
+    color: navy;
+}
+.titre {
+    color: goldenrod;
+}
+.cote {
+    display: flex;
+}
+/* contact */
+#contact {
+    text-align: center;
+}
+.heure {
+    text-align: left;
+}
+
+.edt {
+    position: relative;
+    width: 95%;
+    padding: 20px;
+    padding-top: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr;
+}
+
+.taleau{
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+table{
+	caption-side: bottom;
+    border-collapse: collapse;
+    width: 130%;
+    
+}
+
+td{
+	border: 1px solid red;
+}
+
+th{
+	border: 1px solid black;
+}
+
+.card-title1 {
+    color: goldenrod;
+}
+.card-texte {
+    color: black;
+}
+
+/*footer*/
+

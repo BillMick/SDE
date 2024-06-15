@@ -1,0 +1,49 @@
+/* p
+{
+    text-indent: 20px;
+} */
+.containerEmp
+{
+    text-align : justify;
+    display : grid;
+    border : solid white;
+    grid-template-columns : 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.containerHeader
+{
+    display : grid;
+    grid-template-columns : 20% 60% 20%;
+    /* border : solid olive; */
+    text-align : center;
+    margin-left : 12px;
+    margin-right : 12px;
+}
+
+.containerPart
+{
+    margin-top : 7px;
+    margin-left : 15px;
+    margin-right : 15px;/* 
+    border : solid black; */
+}
+
+
+
+.grid-containerC
+{
+    display: grid;
+    margin-left : 5px;
+    margin-right : 5px;
+    grid-template-columns: 10% 15% 20% 15% 10% 10% 10% 10%;
+}
+
+.grid-containerC>*
+{
+    /* border : 1px solid black; */
+    display: grid;
+    place-items: center;
+
+}

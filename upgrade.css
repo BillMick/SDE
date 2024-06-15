@@ -1,0 +1,107 @@
+label
+{
+    display: block;
+    letter-spacing : 2px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+label .label-text
+{
+    color : #252424;
+    cursor: text;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-34px);
+    -ms-transform: translateY(-34px);
+    -webkit-transform: translateY(-34px);
+    transform: translateY(-34px);
+    transition: all 0.3s;
+}
+
+label input:focus + .label-text
+{
+    color : #fff;
+    background-color: #000;
+    font-size: 13px;
+    margin-top: 20px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+label input
+{
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px solid #4a4a4a;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    width: 100px;
+}
+
+label input:focus
+{
+    max-width: 100%;
+    width: 300px;
+}
+
+label input:valid + .label-text
+{
+    font-size: 12px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+button
+{
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 15px;
+    border: 2px solid #f0f0f0;
+    letter-spacing: 2px;
+    padding: 20px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display:inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 2s;
+    -moz-transition:all 2s;
+    transition: all 2s;
+}
+
+button:hover, button:focus
+{
+    background-color: white;
+    color: #333333;
+}
+
+form
+{
+    border-radius : 10px;
+    border: solid  black;
+    background-color : white;
+    width : max-content;
+    min-width : 280px;
+    height : max-content;
+    min-height : 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(4, 9, 56);
+    box-shadow: 12px 12px 3px 3px rgba(0, 0, 0, 0.5);;
+}
+
+select
+{
+    border: none;
+    background-color: rgb(169, 154, 233);
+}

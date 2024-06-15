@@ -1,0 +1,77 @@
+#fieldset1
+{
+    display : inline;
+    float : center;
+    text-align: justify;
+    width: max-content;
+    color: rgb(4, 9, 56);
+}
+
+form
+{
+    text-align: center;
+    opacity : 1;
+}
+
+label
+{
+    font-weight : bold;
+}
+legend
+{
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+/* .formback
+{
+    border-radius: 7px;
+    margin : 0 auto;
+    width : 500px;
+    height : 1290px;
+    background-color :rgb(127,143,166);
+    opacity : 100%;
+    border-width : 1px;
+    border-style : solid;
+} */
+.formback
+{
+    border-radius: 11px;
+    margin : 0 auto;
+    width : auto;
+    height : auto;
+    opacity : 1;
+    border-width : 1px;
+    border-style : none;
+}
+
+form
+{
+    text-align: center;
+}
+
+legend
+{
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+#fieldset3
+{
+    display : inline;
+    float : center;
+    text-align: justify;
+    border-radius : 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(4, 9, 56);
+    box-shadow: 12px 12px 3px 3px rgba(0, 0, 0, 0.5);
+    border : solid;
+}
+
+button[type = "submit"]:hover
+{
+    background-color: rgb(48, 218, 26);
+}
